@@ -1,0 +1,91 @@
+<!doctype html>
+<!--Sign up page for users to create an account to use on the site, enables them to reserve/borrow resources-->
+<html lang="en">
+    <!-- Head adapted from
+Title: Sign-In template example
+Author: Bootstrap
+Date:2020
+Availability:https://getbootstrap.com/docs/4.4/examples/sign-in/
+-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Sign-up</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+        <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+        <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
+        <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+        <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+        <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#563d7c">
+
+
+        <!-- Custom styles for this template -->
+        <link href="https://getbootstrap.com/docs/4.4/examples/sign-in/signin.css" rel="stylesheet">
+    </head>
+    <body class="text-center">
+        <!--Body format adapted from
+Title: Sign-In template example
+Author: Bootstrap
+Date:2020
+Availability:https://getbootstrap.com/docs/4.4/examples/sign-in/
+-->
+        <div class="container">
+            <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center p-4">
+                <div class="px-2">
+                    <!--Image source:
+Title: Bookshelf Icon Vector
+Artist:Elegant Themes
+Date:2020
+Availability:https://www.brandeps.com/icon/B/Bookshelf-01
+-->
+                    <img class="mb-4" src="images/Bookshelf-01.png" alt="" width="200" height="200">
+                    <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+                    <!--Form takes email, password, first name and last name from the user. Email is checked against type email, all fields are required otherwise user is alerted. On submit User.php checks if the email account inputted is already in use, if true the user is alerted-->
+                    <!--Form id's and names have been adapted by myself-->
+                    <form name = "signUpForm" id="createAccountForm" method="post" action= "" class="justify-content-center">
+                        <div class="form-group">
+                            <input name = "inputEmail" type="email" id="sign-up-email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input name = "inputPassword" id="sign-up-password" type="password" class="form-control" placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                            <input name = "inputFirstName" id="sign-up-first-name" class="form-control" placeholder="First Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input name = "inputLastName" id="sign-up-last-name" class="form-control" placeholder="Last Name" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg directory" >Sign-up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--Jquery Script link
+Title: JQuery core
+Author: Jquery Foundation
+Date:2020
+AVailability: http://code.jquery.com/
+-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+        <!--Bootstrap Javascript files
+Title:Bootstrap Get Started
+Author: Bootstrap
+Date: 2020
+Availability: https://getbootstrap.com/docs/4.4/getting-started/introduction/
+-->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!--Own Javascript file-->
+        <script src = "javascript.js"></script>
+    </body>
+</html>

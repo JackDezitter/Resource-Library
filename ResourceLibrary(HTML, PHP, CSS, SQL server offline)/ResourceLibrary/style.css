@@ -1,0 +1,81 @@
+/*Own code until stated otherwise*/
+/*Sets background of all pages except sign-up and sign-in pages*/
+body{
+    /* Background Image
+    Title: Library Wallpapers
+    Artist: WallpaperAccess
+    Date:2020
+    Availability: https://wallpaperaccess.com/library
+    */
+    background-image: url("images/background.jpg");
+}
+/*Main title attributes*/
+h1.title{
+    text-align: center;
+    color: white;
+    border-radius: 25px;
+    background-color: #92BB39;
+    margin-bottom: px;
+    padding: 20px;
+
+}
+/*Sets nav scroller colour*/
+div.nav-scroller{
+    background-color: #343A40;
+
+}
+/*Sets text colour of buttons of class directory to white*/
+a.directory{
+    color: white; 
+}
+/*Sets the background color of buttons of class viewButton*/
+a.viewButton{
+    background-color: white;
+}
+
+/*Styling of all forms*/
+form{
+    align-content: center;
+    height: auto;
+    padding: 20px;
+    border: 10px;
+    background-color: gray;
+    margin-top: 40px;
+}
+/*Sets the background of the form with id of search-results*/
+#search-results{
+    background-color: #343A40;
+}
+/*Sets text of id Result to white*/
+#Result{
+    color: white;
+}
+/*Sourced from
+Title: Blog Template
+Authors: Mark Otto, Jacob Thornton, and Bootstrap contributors
+Date: 2020
+Availability: https://getbootstrap.com/docs/4.4/examples/blog/#
+*/
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    } 
+}
+/*Own code which shrinks size of text on the results table when on mobile in order for the table to fit well*/
+@media (max-width: 481px){
+    th{
+        font-size: 14px;
+    }
+    td{
+        font-size: 12px;
+    }
+
+}
